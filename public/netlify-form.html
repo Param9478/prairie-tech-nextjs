@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!--
+    This file exists so Netlify can detect the form at build time.
+    Next.js doesn't render a traditional index.html, so we put the
+    hidden form here in /public. Netlify crawls /public at build time.s
+  -->
+    <form name="contact" data-netlify="true" hidden netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <input name="bot-field" />
+        <input name="name" type="text" />
+        <input name="email" type="email" />
+        <input name="type" type="text" />
+        <input name="budget" type="text" />
+        <textarea name="message"></textarea>
+    </form>
+</body>
+
+</html>
