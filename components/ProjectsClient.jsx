@@ -21,33 +21,40 @@ const projects = [
         link: 'https://boondocks-inventory.netlify.app/',
     },
     {
-        id: 3, cat: 'Website', title: 'Trade With Scholars', year: '2023',
+        id: 3, cat: 'Web App', title: 'HP Minor Ball', year: '2025',
+        color: '#0D1F2E', accent: '#38BDF8', img: '/assets/hpminorball.png',
+        stack: ['React', 'Vite', 'Tailwind', 'Netlify'],
+        desc: 'Official website for High Prairie Minor Ball Association featuring schedules, team info, and Facebook feed integration.',
+        link: 'https://hpminorball.com/',
+    },
+    {
+        id: 4, cat: 'Website', title: 'Trade With Scholars', year: '2023',
         color: '#0D2218', accent: '#34D399', img: '/assets/trading.webp',
         stack: ['Next.js', 'Real-time Data', 'Finance'],
         desc: 'Educational platform for trading and stock market analysis.',
         link: 'https://tradewithscholars.com/',
     },
     {
-        id: 4, cat: 'Website', title: '24 Seven Disposal', year: '2024',
+        id: 5, cat: 'Website', title: '24 Seven Disposal', year: '2024',
         color: '#0D2218', accent: '#f65726', img: '/assets/disposal.webp',
         stack: ['React', 'UI/UX', 'SEO', 'Responsive'],
         desc: 'Full digital presence for a local disposal service. Clean, conversion-focused design with local SEO.',
         link: 'https://steady-nougat-6318f6.netlify.app/',
     },
     {
-        id: 5, cat: 'Web App', title: 'Nexto Travel', year: '2024',
+        id: 6, cat: 'Web App', title: 'Nexto Travel', year: '2024',
         color: '#0D1A2D', accent: '#60A5FA', img: '/assets/nexto.webp',
         stack: ['Next.js', 'Express', 'Aviation API', 'Node.js'],
         desc: 'A full-stack flight search platform with real-time airport lookup and live flight data via aviation API.',
         link: 'https://nextotravel.netlify.app/',
     },
-    {
-        id: 6, cat: 'Website', title: 'Aquatic Center', year: '2024',
-        color: '#0D1A2D', accent: '#60A5FA', img: '/assets/aquatic-center.webp',
-        stack: ['React', 'Scheduling', 'CSS Grid'],
-        desc: 'A clean, responsive website for a local aquatic center with schedules and program listings.',
-        link: 'https://aquatic-center.netlify.app/',
-    },
+    // {
+    //     id: 6, cat: 'Website', title: 'Aquatic Center', year: '2024',
+    //     color: '#0D1A2D', accent: '#60A5FA', img: '/assets/aquatic-center.webp',
+    //     stack: ['React', 'Scheduling', 'CSS Grid'],
+    //     desc: 'A clean, responsive website for a local aquatic center with schedules and program listings.',
+    //     link: 'https://aquatic-center.netlify.app/',
+    // },
 ]
 
 const cats = ['All', 'Website', 'Web App']
@@ -198,7 +205,7 @@ export default function ProjectsClient() {
         .work-card:hover { border-color: var(--b3); transform: translateY(-5px); }
         .work-card-visual { height: 220px; position: relative; overflow: hidden; }
         .image-clipper { width: 100%; height: 100%; overflow: hidden; position: relative; }
-        .work-card-img { width: 100%; height: 115%; object-fit: cover; transform: translateY(-9%) scale(1.0); transform-origin: top; transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1); }
+        .work-card-img { width: 100%; height: 125%; object-fit: cover; transform: translateY(-9%) scale(1.0); transform-origin: top; transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1); }
         .work-card:hover .work-card-img { transform: translateY(-5%) scale(1.15); }
         .work-category-tag { position: absolute; top: 16px; right: 16px; background: rgba(0,0,0,0.55); backdrop-filter: blur(10px); color: #fff; padding: 5px 12px; border-radius: 8px; font-size: 10px; font-weight: 600; z-index: 5; text-transform: uppercase; letter-spacing: 0.05em; }
         .work-card-details { padding: 28px; }
